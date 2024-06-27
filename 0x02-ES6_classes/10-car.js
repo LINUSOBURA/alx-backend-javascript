@@ -6,12 +6,12 @@ export default class Car {
   }
 
   static get [Symbol.clones]() {
-	return this;
+    return this;
   }
 
   cloneCar() {
-   const Clones = this.constructor[Symbol.clones];
+    const Clones = this.constructor[Symbol.clones];
 
-   return new Clones();
+    return new Clones();
   }
 }
