@@ -13,14 +13,14 @@ export default class Building {
   }
 
   set sqft(val) {
+    if (typeof val !== 'number') {
+      throw new TypeError('Sqft must be a number');
+    }
     this._sqft = val;
   }
 
   // eslint-disable-next-line class-methods-use-this
   evacuationWarningMessage() {
-    if (this.evacuationWarningMessage === Building.prototype.evacuationWarningMessage) {
-      throw new Error('Class extending Building must override evacuationWarningMessage');
-    }
     throw new Error('evacuationWarningMessage must be implemented in subclass');
   }
 }
