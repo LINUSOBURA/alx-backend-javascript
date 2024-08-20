@@ -1,5 +1,4 @@
 const readline = require('readline');
-const process = require('process');
 
 const { stdin: input, stdout: output } = require('process');
 
