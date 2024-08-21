@@ -1,0 +1,11 @@
+{
+  "name": "0x06-unittests_in_js",
+  "version": "1.0.0",
+  "main": "0-calcul.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Linus Obura",
+  "license": "ISC",
+  "description": ""
+}
