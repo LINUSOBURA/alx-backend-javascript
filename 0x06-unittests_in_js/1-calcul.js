@@ -14,8 +14,6 @@ function calculateNumber(type, a, b) {
     const div = a / b;
     return div;
   }
-
-  return sum;
 }
 
 module.exports = calculateNumber;
