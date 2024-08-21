@@ -1,5 +1,5 @@
 function calculateNumber(a, b) {
-  const sum = Math.round(a) + Math.round(b);
+  const sum = Math.round(a + b);
   return sum;
 }
 
