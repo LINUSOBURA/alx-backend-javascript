@@ -1,10 +1,20 @@
 const assert = require("assert");
 const calculateNumber = require("../0x06-unittests_in_js/0-calcul");
 
-const result1 = calculateNumber(4.5 + 5);
-
 describe("Calculator", function () {
   it("Should round the inputs and return sum", function () {
-    assert.strictEqual(result1, Math.round(result1));
+    assert.strictEqual(calculateNumber(1, 3), Math.round(1) + Math.round(3));
+    assert.strictEqual(
+      calculateNumber(1, 3.7),
+      Math.round(1) + Math.round(3.7)
+    );
+    assert.strictEqual(
+      calculateNumber(1.2, 3.7),
+      Math.round(1.2) + Math.round(3.7)
+    );
+    assert.strictEqual(
+      calculateNumber(1.5, 3.7),
+      Math.round(1.5) + Math.round(3.7)
+    );
   });
 });
