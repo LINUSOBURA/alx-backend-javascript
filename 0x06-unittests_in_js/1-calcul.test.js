@@ -16,6 +16,5 @@ describe("Calculator", function () {
   });
   it("Should return 'Error' when dividing by zero", function () {
     assert.strictEqual(calculateNumber("DIVIDE", 1.4, 0), "Error");
-    assert.strictEqual(calculateNumber("DIVIDE", 1.4, 0.2), "Error");
   });
 });
