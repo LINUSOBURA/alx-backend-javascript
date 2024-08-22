@@ -1,6 +1,5 @@
 const assert = require("assert");
-const calculculateNumber = require("../0x06-unittests_in_js/1-calcul");
-const { describe, it } = require("node:test");
+const calculateNumber = require("../0x06-unittests_in_js/1-calcul");
 
 describe("calculateNumber", () => {
   describe('type == "SUM"', () => {
