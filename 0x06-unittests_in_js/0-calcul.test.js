@@ -17,8 +17,8 @@ describe("Calculator", function () {
       Math.round(1.5) + Math.round(3.7)
     );
     assert.strictEqual(
-      calculateNumber(1.5, 3),
-      Math.round(1.5) + Math.round(3)
+      calculateNumber(1.5, 6),
+      Math.round(1.5) + Math.round(6)
     );
   });
 });
